@@ -81,7 +81,7 @@ font-family: 'Baloo Bhai 2', cursive;
     padding: 3px 200px;
     justify-content: center;
     align-items: center;
-    height: 552px;
+    height: 631px;
 }
 #home::before{
     content: "";
@@ -226,6 +226,17 @@ color:white;
 font-size: 25px;
 border-radius: 25px;
 cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    text-emphasis-color: white;
+}
+a:hover{
+    background-color: grey;
+    border-radius: 7px;
 }
 .center{
     text-align: center;
