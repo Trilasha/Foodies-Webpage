@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c727719643.js" crossorigin="anonymous"></script>
+    <title>SignUp page</title>
+    <!-- <link rel="stylesheet" href="LoginPage/index.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    }
+    body{
+        background: url(bg.jpg) no-repeat center center fixed;
+        background-size: cover; 
+    }
+    .container{ 
+        color: white;
+        position: fixed;
+        top: 25%;
+        left: 40%; 
+    }
+    .container h1{
+        font-family: 'Heebo', sans-serif;
+        width: 100%;
+        display: inline-block;
+        font-size: 40px;
+        border-bottom: 5px solid purple;
+        margin-bottom: 15px;
+        padding: 13px 0;
+    }
+    .LoginForm{ 
+        color: white;
+        position: fixed;
+        top: 25%;
+        left: 40%; 
+    }
+    .LoginForm h1{
+        font-family: 'Heebo', sans-serif;
+        width: 100%;
+        display: inline-block;
+        font-size: 40px;
+        border-bottom: 5px solid purple;
+        margin-bottom: 15px;
+        padding: 13px 0;
+    }
+    .box{
+        width: 100%; 
+        margin: 22px 0px;
+        border-bottom: 2px solid purple;
+    }
+    .box input{  
+        background: none;
+        width: 75%;
+        padding: 5px 10px;
+        font-size: 20px;
+        border: none;
+        outline:none;
+        color: white;
+    }
+    .btn{
+        color: white;
+        cursor: pointer;
+        outline: none; 
+        margin: 12px 0;
+        padding: 10px 21px;
+        border: 2px solid purple;
+        border-radius: 10px;
+        font-size: 18px;
+        background: none;
+        font-weight: bold;
+    }
+    .box i{ 
+        width: 25px; 
+        text-align: center;
+    }
+    .btn:hover{
+        opacity: 0.5;
+        color: purple; 
+        background: white; 
+        
+    }
+    .message{
+        margin: 16px 0 0;
+        color: aliceblue;
+        font-size: 18px;
+    }
+    .message a{
+        color: #4CAF50;
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .LoginForm{
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <form class="container">
+        <h1>Become our customer</h1>
+        <div class="box">
+            <i class="fa-solid fa-user"></i>
+            <input type="username" name="username" id="username" placeholder="Enter a username">
+        </div>
+        <div class="box">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="Enter your Email">
+        </div>
+        <div class="box">
+            <i class="fa fa-key"></i>
+            <input type="password" name="password" id="password" placeholder="Create a Password">
+        </div>
+        <button class="btn">Create</button>
+        <p class="message">Already a registered customer?<a href="#"> Login</a></p>
+    </form>
+
+
+
+    <form class="LoginForm">
+        <!-- <h1>Become our customer</h1> -->
+        <div class="box">
+            <i class="fa-solid fa-user"></i>
+            <input type="username" name="username" id="username" placeholder="Enter your username">
+        </div>
+        <div class="box">
+            <i class="fa fa-key"></i>
+            <input type="password" name="password" id="password" placeholder="Enter Your Password">
+        </div>
+        <button class="btn">Log in</button>
+        <p class="message">Not registered yet?<a href="#"> Register</a></p>
+    </form>
+
+
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script>
+        $('.message a').click(function(){
+            $('form').animate({height:"toggle",opacity:"toggle"},"slow");
+        });
+    </script>
+</body>
+</html>
