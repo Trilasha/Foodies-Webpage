@@ -204,7 +204,9 @@ footer{
 .h-primary{
     font-family: 'Bree Serif', serif;
     font-size: 3rem;
-    padding: 7px;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: -30px;
 }
 .h2-primary{
     font-family: 'Bree Serif', serif;
